@@ -27,7 +27,7 @@ export class USCasesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUSCases()
-    let time2 = setInterval(() => { if (this.updatedMinutes != -1) this.updatedMinutes++ }, 1000)
+     let time2 = setInterval(() => { if (this.updatedMinutes != -1) this.updatedMinutes++ }, 1000)
     let timerId = setInterval(() => {
       this.getUSCases();
     }
@@ -37,6 +37,7 @@ export class USCasesComponent implements OnInit {
   getUSCases() {
     this.covidCasesService.getUSCovidCases().then(
       (totalCases) => {
+        console.log("Updating the  array")
         this.usCasesArray = totalCases
         this.updatedMinutes = 0
       },

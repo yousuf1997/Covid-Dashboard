@@ -70,7 +70,7 @@ export class SorterPipe implements PipeTransform {
           }
         )}
         else if (sortColumn === "defaultB"){
-        return [...cases].sort(
+        return cases.sort(
           (a: any, b: any) => {
             if (a.country < b.country) {
               return -1;
@@ -81,7 +81,20 @@ export class SorterPipe implements PipeTransform {
             }
           }
         )
-      }if (sortColumn === "revActive") {
+      } else if (sortColumn === "rDefaultB"){
+        return cases.sort(
+          (a: any, b: any) => {
+            if (a.country < b.country) {
+              return 1;
+            } else if (a.country > b.country) {
+              return -1;
+            } else {
+              return 0;
+            }
+          }
+        )
+      } 
+      else if (sortColumn === "revActive") {
         return cases.sort(
           (a: any, b: any) => {
             if (a.activeCases < b.activeCases) {

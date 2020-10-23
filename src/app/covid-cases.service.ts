@@ -104,7 +104,7 @@ export class CovidCasesService {
 
 
           console.log("[CovideCaseService]")
-
+          this.worldWideCasesArray = []
 
           /**
            * Following code gets the  all of the countries
