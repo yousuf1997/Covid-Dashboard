@@ -1,0 +1,40 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="display-4 text-center">Total Cases of COVID-19
+                    &nbsp;
+                </h3>                
+            </div>
+         
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="d-flex justify-content-center" *ngIf="totalNumberofCases == 0">
+                    <span class="spinner-grow text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </span>
+                </div>
+                <table *ngIf="totalNumberofCases > 0" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Confirmed Cases</th>
+                            <th scope="col">Recovered</th>
+                            <th scope="col">Deaths</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{totalNumberofCases}}</td>
+                            <td>{{totalNumberofRecoveries}}</td>
+                            <td>{{totalNumberOfDeaths}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1 offset-9">
+                <p class="badge badge-secondary">Updated {{updatedMinutes}} Seconds ago.</p>
+            </div>
+        </div>
+    </div>
+</div>
