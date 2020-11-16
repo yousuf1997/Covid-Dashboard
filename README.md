@@ -1,3 +1,7 @@
+# Demo Display
+ <img src="https://github.com/yousuf1997/PinIt_Android_App/blob/master/marker.png" width="400" height="400">
+
+
 # CoronaDashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
