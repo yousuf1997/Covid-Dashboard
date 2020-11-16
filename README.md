@@ -1,5 +1,5 @@
 # Demo Display
- <img src="https://github.com/yousuf1997/Angular-Demo-Project/blob/master/CovidDashboardDemo.gif" width="400" height="600">
+ <img src="https://github.com/yousuf1997/Angular-Demo-Project/blob/master/CovidDashboardDemo.gif" width="600" height="400">
 
 
 # CoronaDashboard
